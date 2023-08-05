@@ -16,6 +16,10 @@
         {
             background-image: linear-gradient(to bottom right,#4c51bf,#702459);
         }
+        .gradient-skill
+        {
+            background-image: linear-gradient(#FC8181,#FED7D7);
+        }
     </style>
     <title>Belajar Tailwind</title>
 </head>
@@ -36,10 +40,10 @@
                    <a href="#about" class="block mt-4 lg:inline-block lg:mt-0  text-gray-600 hover:text-gray-900 text-lg mr-4">
                         About me
                    </a>
-                   <a href="#recent" class="block mt-4 lg:inline-block lg:mt-0  text-gray-600 hover:text-gray-900 text-lg mr-4">
+                   <a href="#skill" class="block mt-4 lg:inline-block lg:mt-0  text-gray-600 hover:text-gray-900 text-lg mr-4">
                         Framework skill
                    </a>
-                   <a href="#skill" class="block mt-4 lg:inline-block lg:mt-0  text-gray-600 hover:text-gray-900 text-lg mr-4">
+                   <a href="#recent" class="block mt-4 lg:inline-block lg:mt-0  text-gray-600 hover:text-gray-900 text-lg mr-4">
                         Recent Work
                    </a>
                    <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0  text-gray-600 hover:text-gray-900 text-lg mr-4">
@@ -55,7 +59,7 @@
        </nav>
    </section>
 
-   <section class="w-screen mx-auto py-4 gradient">
+   <section id="#about" class="w-screen mx-auto py-4 gradient">
         <div class="px-16 py-8 text-white text-center">
             <h1 class="w-full text-5xl font-bold">About Me</h1>
             <div class="mb-4">
@@ -63,7 +67,7 @@
                 <h2 class="text-3xl text-bold mb-2">Hai, saya Rizkian DS senang berjumpa dengan anda.</h2>
                 <h3 class="text-lg mb-2">Saya seorang programmer dan juga analis, selain dapat membuat aplikasi menggunakan bahasa pemrogramman, saya juga sistem yang dibutuhkan oleh user.</h3>
                 <div class="w-full">
-                    <div class="px-4 py-4">
+                    <div class="px-4 py-8">
                         <img src="img/foto.jpg" class="shadow-lg rounded-full max-w-full mx-auto text-center w-48" alt="foto">
                     </div>
                 </div>                
@@ -71,7 +75,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 px-4 py-4 md:px-8 md:py-8 bg-white m-16 rounded-lg">
                 <div class="max-w-sm shadow-lg px-4 py-4 bg-red-400 m-5">
                     <!-- elemen-elemen box pertama-->
-                    <i class="fas fa-laptop-code fa-5x text-blue-500 mb-3"></i>
+                    <i class="fas fa-laptop-code fa-5x py-4 text-blue-500 mb-3"></i>
                     <div class="p-4 ">
                         <p class="font-bold text-gray-600 text-lg md:text-xl mb-3">Programming</p>
                         <p class="text-gray-600 text-base mb-2">PHP</p>
@@ -90,7 +94,7 @@
                 </div>
                 <div class="max-w-sm shadow-lg px-4 py-4 bg-green-400 m-5">
                     <!-- elemen-elemen box kedua-->
-                    <i class="fas fa-pencil-ruler fa-5x text-red-500 mb-3"></i>
+                    <i class="fas fa-pencil-ruler fa-5x py-4 text-red-500 mb-3"></i>
                     <div class="p-4 ">
                         <p class="font-bold text-gray-600 text-lg md:text-xl mb-3">Design</p>
                         <p class="text-gray-600 text-base mb-2">CSS</p>
@@ -109,7 +113,7 @@
                 </div>
                 <div class="max-w-sm shadow-lg px-4 py-4 bg-yellow-400 m-5">
                     <!-- elemen-elemen box ketiga-->
-                    <i class="fas fa-database fa-5x text-green-500 mb-3"></i>
+                    <i class="fas fa-database fa-5x py-4 text-green-500 mb-3"></i>
                     <div class="p-4 ">
                         <p class="font-bold text-gray-600 text-lg md:text-xl mb-3">Database</p>
                         <p class="text-gray-600 text-base mb-2">MySQL</p>
@@ -129,18 +133,146 @@
             </div>
         </div>
     </section>
-    <section class="w-screen mx-auto py-4 bg-white">
+    
+    <section id="#skill" class="w-screen mx-auto py-4 bg-white">
         <div class="flex flex-wrap">
             <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
                 <!-- source img4.jpg didownload dari situs unsplash.com, Jess Bailey - @jessbailey-->
                 <img src="img/img1.png" class="max-w-full rounded-lg shadow-lg">
             </div>
-            <div class="w-full md:w-5/12 ml-auto mr-auto px-4 bg-pink-500 h-32"></div>
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                <div class="md:pr-12">
+                    <h1 class="w-full my-2 text-5xl font-bold text-center text-gray-700">Skill Framework</h1>
+                </div>                
+                <div class="mb-4">
+                    <div class="h-1 mx-auto bg-pink-500 w-2/3 opacity-75 my-0 mx-0 rounded"></div>
+                </div>
+                <p class="mt-4 text-lg text-gray-600">
+                    Berikut adalah item dan skala keahlian untuk framework :
+                </p>
+                <ul class="list-none mt-4">
+                    <li class="grid grid-cols-2 py-2">
+                       <p class="text-lg text-gray-600">Codeigniter</p>
+                       <div class="gradient-skill w-7/8"></div>
+                    </li>
+                   <li class="grid grid-cols-2 py-2">
+                       <p class="text-lg text-gray-600">Laravel</p>
+                       <div class="gradient-skill w-3/4"></div>
+                   </li>
+                   <li class="grid grid-cols-2 py-2">
+                       <p class="text-lg text-gray-600">Bootstrap</p>
+                       <div class="gradient-skill w-2/3"></div>
+                    </li>
+                    <li class="grid grid-cols-2 py-2">
+                      <p class="text-lg text-gray-600">Tailwindcss</p>
+                      <div class="gradient-skill w-1/2"></div>
+                    </li>
+                 </ul>
+            </div>
         </div>
     </section>
-   <section class="w-screen mx-auto py-4 bg-gray-300 h-32">Recent Work</section>
-   <section class="w-screen mx-auto py-4 bg-indigo-700 h-32">Contact Me</section>
-   <section class="w-screen mx-auto py-4 bg-white h-32">Footer</section>
+
+    <section id="#recent" class="w-screen mx-auto py-4 bg-gray-300">
+        <div class="text-center mb-8">
+            <h1 class="w-full my-2 text-5xl font-bold text-gray-700">My Recent Work</h1>
+                <div class="mb-4">
+                    <div class="h-1 mx-auto bg-pink-500  w-2/3 md:w-1/4 opacity-75 my-0 py-0 rounded"></div>
+                </div>
+                <p class="text-lg m-4 text-gray-600">Berikut adalah pekerjaan terbaru Saya : </p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 m-8">
+            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+                <!-- source img1.jpg didownload dari situs unsplash.com, koleksi Clément H-@clemhlrdt-->
+                <img src="img/img1.jpg" class="w-full rounded-lg">
+                <div class="px-2 py-2 text-center">
+                    <p class="font-bold text-xl mb-2 text-gray-700">Sistem Informasi Penelitian</p>
+                    <p class="text-gray-700 text-base">Sistem Informasi penelitian untuk dosen dan mahasiswa di Universitas XX</p>
+                </div>
+                <div class="px-2 py-4 text-center">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Detail</button>
+                </div>
+            </div>
+            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+                <!-- source img2.jpg didownload dari situs unsplash.com, koleksi NordWood Themes - @nordwood -->
+                <img src="img/img2.jpg" class="w-full rounded-lg">
+                <div class="px-2 py-2 text-center">
+                    <p class="font-bold text-xl mb-2 text-gray-700">Sistem Informasi Perpustakaan</p>
+                    <p class="text-gray-700 text-base">Sistem Informasi Perpustakaan untuk Perpustakaan kota ABC</p>
+                </div>
+                <div class="px-2 py-4 text-center">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Detail</button>
+                </div>
+            </div>
+            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+                <!-- source img2.jpg didownload dari situs unsplash.com, koleksi NordWood Themes - @nordwood -->
+                <img src="img/img2.jpg" class="w-full rounded-lg">
+                <div class="px-2 py-2 text-center">
+                    <p class="font-bold text-xl mb-2 text-gray-700">Sistem Informasi Perpustakaan</p>
+                    <p class="text-gray-700 text-base">Sistem Informasi Perpustakaan untuk Perpustakaan kota ABC</p>
+                </div>
+                <div class="px-2 py-4 text-center">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Detail</button>
+                </div>
+            </div>
+            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+                <!-- source img2.jpg didownload dari situs unsplash.com, koleksi NordWood Themes - @nordwood -->
+                <img src="img/img2.jpg" class="w-full rounded-lg">
+                <div class="px-2 py-2 text-center">
+                    <p class="font-bold text-xl mb-2 text-gray-700">Sistem Informasi Perpustakaan</p>
+                    <p class="text-gray-700 text-base">Sistem Informasi Perpustakaan untuk Perpustakaan kota ABC</p>
+                </div>
+                <div class="px-2 py-4 text-center">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Detail</button>
+                </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="w-screen mx-auto py-4 gradient">
+        <h1 class="w-full my-2 text-5xl font-bold text-center text-white">Contact Me</h1>
+        <div class="mb-4">
+            <div class="h-1 mx-auto bg-pink-500  w-2/3 md:w-1/4 opacity-75 my-0 py-0 rounded"></div>
+        </div>
+        <div class="container p-4 mb-6 w-full lg:w-1/2 shadow-lg rounded-lg bg-gray-200 mx-auto text-center">
+            <form class="p-5 lg:p-10" action="">
+                <h4 class="text-2xl font-semibold">Ingin hubungi saya?</h4>
+                <p class="mt-1 mb-4 text-gray-600">Tolong kirimkan pesan.</p>
+                <div class="w-full mt-4 mb-8">
+                    <label class="uppercase text-gray-600 text-xs font-bold" for="">Nama</label>
+                    <input type="text" class="w-full mt-2 px-3 py-3 placeholder-gray-400 text-gray-600 bg-white rounded text-sm shadow" placeholder="Nama Lengkap" name="" id="">
+                </div>
+                <div class="w-full mt-4 mb-4">
+                    <label class="uppercase text-gray-600 text-xs font-bold" for="">Email</label>
+                    <input type="text" class="w-full mt-2 px-3 py-3 placeholder-gray-400 text-gray-600 bg-white rounded text-sm shadow" placeholder="Email" name="" id="">
+                </div>
+                <div class="w-full mt-4 mb-4">
+                    <label class="uppercase text-gray-600 text-xs font-bold" for="">Pesan</label>
+                    <textarea name="" id="" cols="80" rows="4" class="w-full mt-2 px-3 py-3 placeholder-gray-400 text-gray-600 bg-white rounded text-sm shadow" placeholder="Ketikan Pesan"></textarea>
+                </div>
+                <div class="mt-6">
+                    <button class="bg-indigo-700 text-white text-sm font-bold uppercase px-6 py-3 rounded shadow hover:bg-indigo-900 hover:shadow-lg" type="button">Kirim</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="w-screen mx-auto py-4 bg-white mt-2 mb-2">
+        <div class="text-center">
+            <!-- link & icon -->
+            <a href="#" class="text-indigo-700 hover:text-indigo-900 p-2 ">
+                <i class="fa-2x fab fa-facebook"></i>
+            </a>
+            <a href="#" class="text-indigo-700 hover:text-indigo-900 p-2 ">
+                <i class="fa-2x fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-indigo-700 hover:text-indigo-900 p-2 ">
+                <i class="fa-2x fab fa-instagram"></i>
+            </a>
+        </div>
+        <div class="text-center mt-4 text-gray-600">
+            Design with Tailwindcss
+        </div>
+    </section>
    
 </body>
 </html>
